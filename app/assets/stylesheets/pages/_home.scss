@@ -1,10 +1,46 @@
 // Specific CSS for your home-page
 h1 {
-  font-family: 'Fraunces', serif;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-h1{
+h1 {
   margin-top: 100px;
   margin-left: 20px;
+}
+
+.frida {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❤️</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+}
+
+.tooltip {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 0px;
+  left: 75px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.content h1,
+.content p {
+  margin: 0;
+  color: bisque;
+}
+
+.follow-mouse:hover + .content {
+  opacity: 1;
+}
+
+.specificLocation {
+  margin-left: 100px;
+}
+
+img:hover {
+  mix-blend-mode: luminosity;
 }
