@@ -5,7 +5,7 @@
     <div class="relative flex items-center justify-between h-16">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button-->
-        <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+        <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <!-- Icon when menu is closed. -->
           <!--
@@ -27,22 +27,25 @@
           </svg>
         </button>
       </div>
+
       <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
         <div class="flex-shrink-0 flex items-center">
-          <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
-          <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow">
+        <%= image_tag(("artgal_logo.png"), class: "block lg:hidden h-8 w-auto") %>
+        <%= image_tag(("artgal_logo.png"), class: "hidden lg:block h-8 w-auto") %>
+        
+          
         </div>
+        
         <div class="hidden sm:block sm:ml-6">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <p>
-            <%= link_to "DOWNLOAD", "#download", class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"%></p>
+            
+            <p><%= link_to "DOWNLOAD", "#download", class: "text-black px-3 py-2 rounded-md text-sm font-medium"%></p>
 
-            <%= link_to "ABOUT", "#about", class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"%>
+            <p><%= link_to "ABOUT", "#about", class: "text-black px-3 py-2 rounded-md text-sm font-medium"%></p>
 
-            <%= link_to "ABOUT", "#about", class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"%>
+            <p><%= link_to "DOWNLOAD", "#download", class: "text-red px-3 py-2 rounded-md text-sm font-medium"%></p>
 
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
           </div>
         </div>
       </div>
@@ -79,22 +82,3 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item active">
-
-        <p><%= link_to "ABOUT", "#about", class: "nav-link"%></p>
-
-      </li>
-      <li class="nav-item">
-        <p><%= link_to "APP", "#app", class: "nav-link" %></p>
-      </li>
-      <li class="nav-item">
-        <p><%= link_to "DOWNLOAD", "#download", class: "nav-link  btn btn-light" %></p>
-      </li>
-
-    </ul>
-  </div>
-</div>
