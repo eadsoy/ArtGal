@@ -12,41 +12,36 @@
   width: 40px;
 }
 
-
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
-
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
-
 a {
-    color: rgba(0,0,0,0.8);
-    text-decoration: none;
-    background-color: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  background-color: transparent;
 }
 
 a:hover {
-    color: rgba(0,0,0,0.8);
-    text-decoration: none;
-    background-color: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  background-color: transparent;
 }
 
 p > a {
   position: relative;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
 
 p > a:hover {
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
-
-
 
 p > a::before {
   content: "";
@@ -61,37 +56,32 @@ p > a::before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-
-
 p > a:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
 
-
 ///////
 
-i{
+i {
   font-size: 100px;
 }
 
-h1{
+h1 {
   font-size: 100px;
 }
 h1 > a {
   position: relative;
-  color: rgba(0,0,0,.8);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   cursor: default;
 }
 
 h1 > a:hover {
-  color: rgba(0,0,0,.8);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   cursor: default;
 }
-
-
 
 h1 > a::before {
   content: "";
@@ -106,8 +96,6 @@ h1 > a::before {
   transition: all 0.3s ease-in-out 0s;
   cursor: default;
 }
-
-
 
 h1 > a:hover::before {
   visibility: visible;
