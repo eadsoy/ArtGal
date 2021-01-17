@@ -28,10 +28,11 @@ require("stylesheets/application.scss");
 // import { initSelect2 } from '../components/init_select2';
 // import { initModal } from "../plugins/init_modal.js";
 import { initCursor } from "../plugins/init_cursor.js";
-
+// import { init_frame } from "../plugins/init_frame.js";
 document.addEventListener("turbolinks:load", () => {
   // Call your functions here, e.g:
   // initSelect2();
   // initModal();
   initCursor();
+  // initFrame();
 });
