@@ -1,15 +1,21 @@
 <%= render 'shared/navbar' %>
 
 
-<section class=" body-font text-white">
+<section class=" body-font text-white" id="section-1">
     <div class="container px-8 mx-auto py-36 lg:px-4">
         <div class="flex flex-col mb-12 text-left lg:text-center">
             <h1 class="mb-6 w-full text-8xl title-font font-semibold tracking-tighter flex flex-col w-full mt-20 lg:text-center">ArtGal</h1>
-            <p class="mx-auto w-full text-lg font-semibold leading-relaxed lg:w-1/2">Explore artists, view artwork and create your own collection! </p>
+            <p class="mx-auto w-full text-lg font-semibold leading-relaxed lg:w-1/2">Your mobile art collection </p>
+          <a href="#section-2" class="hover:text-white p-12" diasbled>
+            <button type="button" id="#" class="hover:bg-opacity-80 " disabled>
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" class="animate-bounce w-6 h-6 svg-inline--fa fa-arrow-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"></path></svg>
+            </button>
+          </a>
         </div>
+    </div>
 </section>
 
-<section class="overflow-hidden text-gray-700 body-font">
+<section class="overflow-hidden text-gray-700 body-font" id="section-2">
   <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
       <div class="flex flex-wrap -m-1 md:-m-2">
           <div class="flex flex-wrap w-1/4">
@@ -17,7 +23,7 @@
                   <div class="tooltip w-full p-1 md:p-2 ">
                         <img alt="gallery" class="download-button rounded-lg image-1 follow-mouse show-modal block object-cover object-center w-full h-full rounded-lg " 
                             src="https://cdn.abcotvs.com/dip/images/6101111_041320-kgo-ov-coronavirus-de-young-vid.jpg?w=1600">
-                        <div class="container content">
+                        <div class="container content font-medium	">
                           <h1>This is Frida Kahlo</h1>
                           <p>What do you know about her?</p>
                         </div>
@@ -35,11 +41,8 @@
                   <img alt="gallery" class="image-3 block object-cover object-center w-full h-full rounded-lg"
                       src="https://i2.wp.com/www.brainpickings.org/wp-content/uploads/2014/02/rothko2.jpg?w=680&ssl=1">
               </div>
-              <div class="w-full p-1 md:p-2">
-                  <h1>Explore artists, artwork</h1>
-                  <h1 class="image-4 text-lg">Get to know more about famous artists</h1>
-            
-                  
+              <div class="image-4 w-full p-1 md:p-2 text-white text-lg text-center justify-self-center">
+                  <h1>Read about famous artists, view their artwork and create your own collection!</h1>   
               </div>
           </div>
           <div class="flex flex-wrap w-1/4">
@@ -52,7 +55,7 @@
               <div class="tooltip w-full p-1 md:p-2">
                     <img alt="gallery" class="follow-mouse image-6 show-modal block object-cover object-center w-full h-full rounded-lg " 
                         src="https://singulart-website-prod.s3.eu-central-1.amazonaws.com/famous/artists/cropped/famous_artist_65_787b2120f9007faa11ee5dcc543b4148.jpeg">
-                    <div class="container content">
+                    <div class="container content font-medium">
                       <h1>Who painted</h1>
                       <p>The Scream?</p>
                     </div>
@@ -78,23 +81,30 @@
 
 <section class="text-gray-700 body-font">
     <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:py-10 md:flex-row" id="about">
-        <div class="  w-5/6 mb-10 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
+        <div class="  w-5/6 mb-10 lg:max-w-lg lg:w-1/4 md:w-1/2 md:mb-0">
             <%= image_tag(("artgal_1.png"), class: "pointer-events-none object-cover object-center rounded", style: "height: 700px;") %>
+
         </div>
+        <div class="  w-5/6 mb-10 lg:max-w-lg lg:w-1/4 md:w-1/2 md:mb-0">
+
+            <%= image_tag(("artgal_2.png"), class: "pointer-events-none object-cover object-center rounded", style: "height: 700px;") %>
+        </div>
+
         <div
             class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 md:items-start md:text-left">
-                                <h2 class="mb-1 text-xs font-medium tracking-widest text-blue-500 title-font ">Your tagline</h2>
+           
             <h1 class="mb-8 text-2xl font-bold tracking-tighter text-center text-white  lg:text-left lg:text-5xl title-font">
-                Medium length display headline.
+                Start Discovering
             </h1>
-            <p class="mb-8 text-lg font-semibold leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">
-            Static Tailwind CSS
-            templates for easy integration
-            with your go-to language.
-            Designing your landing page usually takes weeks.
-            Wickedtemplates has them ready for you so you take care of what really matters.
-            Deploy stunning landing pages in no time.</p>
+            <p class="mb-8 text-lg font-semibold leading-relaxed text-center text-white lg:text-left lg:text-1xl">
+            ArtGal is a mobile app where you can find all about artists and their artwork from throughout the world. View images, watch videos, read about artists and share your thoughts on everything art related.</p>
             
+
+            <a href="#download">
+              <button
+                  class="items-center px-6 py-2 mt-4 font-semibold text-white text-opacity-80 transition duration-500 ease-in-out transform bg-trasnparent border-2 border-white rounded-lg lg:inline-flex lg:mt-px hover:border-white hover:border-opacity-80 hover:bg-white hover:bg-opacity-80 hover:text-black focus:ring focus:outline-none ">Download
+              </button>
+            </a>
         </div>
     </div>
 </section>
@@ -102,6 +112,30 @@
 
 
 
+  <section class="text-gray-700 body-font">
+    <div class="container px-8 pt-24 mx-auto lg:px-4">
+        <div class="flex flex-wrap text-center">
+            <div class="px-8 py-6 mx-auto lg:px-24 lg:w-2/4 md:w-full">
+
+
+                <button
+                    class="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-black duration-500 ease-in-out transform bg-white border rounded-lg shadow-xl transittion hover:text-white hover:bg-black hover:border-black focus:shadow-outline focus:outline-none">
+                    IOS
+                </button>
+            </div>
+            <div class="px-8 py-6 mx-auto lg:px-24 lg:w-2/4 md:w-full">
+
+
+                <button
+                    class="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
+                    ANDROID
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+                                  
 
 
 
