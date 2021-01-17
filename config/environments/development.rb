@@ -52,9 +52,9 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
-  group :development, :test do 
-    gem 'sqlite3'    #gem to use in development-test environment
-  end
+  # group :development, :test do 
+  #   gem 'sqlite3'    #gem to use in development-test environment
+  # end
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
 
