@@ -1,4 +1,14 @@
 <%= render 'shared/navbar' %>
+
+
+<section class=" body-font text-white">
+    <div class="container px-8 mx-auto py-36 lg:px-4">
+        <div class="flex flex-col mb-12 text-left lg:text-center">
+            <h1 class="mb-6 w-full text-8xl title-font font-semibold tracking-tighter flex flex-col w-full mt-20 lg:text-center">ArtGal</h1>
+            <p class="mx-auto w-full text-lg font-semibold leading-relaxed lg:w-1/2">Explore artists, view artwork and create your own collection! </p>
+        </div>
+</section>
+
 <section class="overflow-hidden text-gray-700 body-font">
   <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
       <div class="flex flex-wrap -m-1 md:-m-2">
@@ -63,18 +73,18 @@
 
           
       </div>
-</section>
+</section>  
 
 
 <section class="text-gray-700 body-font">
     <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:py-10 md:flex-row" id="about">
-        <div class="w-5/6 mb-10 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
-            <%= image_tag(("artgal_1.png"), class: "object-cover object-center rounded", style: "height: 700px;") %>
+        <div class="  w-5/6 mb-10 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
+            <%= image_tag(("artgal_1.png"), class: "pointer-events-none object-cover object-center rounded", style: "height: 700px;") %>
         </div>
         <div
             class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 md:items-start md:text-left">
                                 <h2 class="mb-1 text-xs font-medium tracking-widest text-blue-500 title-font ">Your tagline</h2>
-            <h1 class="mb-8 text-2xl font-bold tracking-tighter text-center text-red-500 text-opacity-80 lg:text-left lg:text-5xl title-font">
+            <h1 class="mb-8 text-2xl font-bold tracking-tighter text-center text-white  lg:text-left lg:text-5xl title-font">
                 Medium length display headline.
             </h1>
             <p class="mb-8 text-lg font-semibold leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">
@@ -89,25 +99,11 @@
     </div>
 </section>
 
-<section class="text-gray-700 body-font">
-    <div class="container px-8 mx-auto py-36 lg:px-4">
-        <div class="flex flex-col w-full mb-12 text-left lg:text-center">
-            <h2 class="mb-1 text-xs font-semibold tracking-widest text-blue-600 uppercase title-font">a great
-                header right here</h2>
-            <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-black sm:text-6xl title-font">
-                ArtGal
-                <br class="">
-                to convey your users.
-            </h1>
-            <p class="mx-auto text-base font-semibold leading-relaxed text-gray-700 lg:w-1/2">Tailwind CSS templates
-            with a wicked design.
-            Professionally designed and 100% responsive static templates for startups and personal use.Whatever cardigan
-                tote bag tumblr hexagon brooklyn
-                asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of
-                them man
-                bun deep. </p>
-        </div>
-</section>
+
+
+
+
+
 
 
 
@@ -132,33 +128,6 @@
 
 
 
-<div class="tooltip">
-  <span class="dot"></span>
-  <div class="content">
-    <h1>Tooltip heading</h1>
-    <p>Some random text blah blah...</p>
-  </div>
-</div>
-
-<br><br>
-
-<div class="tooltip">
-  <span class="dot"></span>
-  <div class="content">
-    <h1>Tooltip heading</h1>
-    <p>Some random text blah blah...</p>
-  </div>
-</div>
-
-<br><br>
-
-<div class="tooltip specificLocation">
-  <span class="dot"></span>
-  <div class="content">
-    <h1>Different location</h1>
-    <p>Some random text blah blah...</p>
-  </div>
-</div>
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
